@@ -1,0 +1,23 @@
+Listar todos los empleados:
+
+for(i=0;i<100;i++)
+	
+	for(j=0;j<5;j++)
+		
+		if(emp[i].idSector==sec[j].id)
+		
+			"%d", emp[i].legajo
+			"%s", emp[i].nombre	
+			"%s", sec[j].descripcion
+
+
+Listar los sectores por empleados:
+
+for(i=0;i<5;i++)
+	for(j=0;j<100;j++)
+		if(sec[i].id==emp[j].idSector)
+			
+			"%s", sec[i].descripcion
+			"%d", emp[j].legajo
+			"%s", emp[j].nombre	
+			
