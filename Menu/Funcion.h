@@ -47,7 +47,7 @@ int buscarEmpleado(eEmpleado[] , int , int);
 void bajaPorLegajo(eEmpleado[] , int);
 
 
-
+void hardCode(eSector[]);
 
 
 

@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1524659366 source:c:\users\alumno\desktop\menu\funcion.c
+1524662616 source:c:\users\alumno\desktop\menu\funcion.c
 	<stdio.h>
 	<stdlib.h>
 	"Funcion.h"
 
-1524659797 c:\users\alumno\desktop\menu\funcion.h
+1524662557 c:\users\alumno\desktop\menu\funcion.h
 
-1524657938 source:c:\users\alumno\desktop\menu\main.c
+1524665153 source:c:\users\alumno\desktop\menu\main.c
 	<stdio.h>
 	<stdlib.h>
 	"Funcion.h"

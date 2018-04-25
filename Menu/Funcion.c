@@ -110,7 +110,7 @@ void listar(eEmpleado emp[], int tam)
 {
     int i;
 
-    printf("Legajo:\tNombre:\tSexo:\tFechaIng:\tSalario:\n\n");
+    printf("Legajo:\tNombre:\tSexo:\tFechaIng:\tSalario:\tId\n\n");
 
     for(i=0; i < tam; i++)
     {
@@ -121,18 +121,6 @@ void listar(eEmpleado emp[], int tam)
     }
 }
 
-
-/*
-void listarUno(eEmpleado emp[])
-{
-    eEmpleado nuevoEmpleado;
-    printf("Legajo:\tNombre:\tSexo:\tFechaIng:\tSalario:\n\n");
-    if(nuevoEmpleado.isEmpty == 0)
-    {
-        printf("%d\t%s\t%c\t%d/%d/%d\t\t%.2f\n", nuevoEmpleado.legajo, nuevoEmpleado.nombre, nuevoEmpleado.sexo, nuevoEmpleado.fechaIngreso.dia, nuevoEmpleado.fechaIngreso.mes, nuevoEmpleado.fechaIngreso.anio, nuevoEmpleado.sueldo);
-    }
-}
-*/
 
 
 int buscarEmpleado(eEmpleado emp[] , int tam , int legajo)
@@ -176,4 +164,28 @@ void bajaPorLegajo(eEmpleado emp[] , int tam)
         emp[legajoBaja] = nuevoEmpleado;
         printf("Baja exitosa.");
     }
+}
+
+
+void hardCode(eSector sectores[])
+{
+    sectores[0].id = 1;
+    strcpy(sectores[0].descripcion, "RRHH");
+    sectores[0].isEmpty = 0;
+
+    sectores[1].id = 2;
+    strcpy(sectores[1].descripcion, "Sistemas");
+    sectores[1].isEmpty = 0;
+
+    sectores[2].id = 3;
+    strcpy(sectores[2].descripcion, "Administracion");
+    sectores[2].isEmpty = 0;
+
+    sectores[3].id = 4;
+    strcpy(sectores[3].descripcion, "Compras");
+    sectores[3].isEmpty = 0;
+
+    sectores[4].id = 5;
+    strcpy(sectores[4].descripcion, "Deposito");
+    sectores[4].isEmpty = 0;
 }
