@@ -5,6 +5,7 @@
 int menu()
 {
     int opcion;
+
     system("cls");
     printf("******ABM*******\n\n");
     printf("1 - ALTA\n");
@@ -12,7 +13,7 @@ int menu()
     printf("3 - MODIFICACION\n");
     printf("4 - LISTAR\n");
     printf("5 - ORDENAR\n");
-    printf("6 - SALIR\n");
+    printf("6 - Salir\n");
 
     printf("\nElija opcion deseada: ");
     scanf("%d" , &opcion);
@@ -110,7 +111,7 @@ void listar(eEmpleado emp[], int tam)
 {
     int i;
 
-    printf("Legajo:\tNombre:\tSexo:\tFechaIng:\tSalario:\tId\n\n");
+    printf("Legajo:\tNombre:\tSexo:\tFechaIng:\tSalario:\tId:\n\n");
 
     for(i=0; i < tam; i++)
     {
@@ -156,18 +157,18 @@ void bajaPorLegajo(eEmpleado emp[] , int tam)
 
     if(legajoBaja == -1)
     {
-        printf("El legaja %d nunca fue ingresado en el sistema," , legajo);
+        printf("El legaja %d nunca fue ingresado en el sistema.\n" , legajo);
     }
     else
     {
         nuevoEmpleado.isEmpty = 1;
         emp[legajoBaja] = nuevoEmpleado;
-        printf("Baja exitosa.");
+        printf("Baja exitosa.\n");
     }
 }
 
 
-void hardCode(eSector sectores[])
+/*void hardCode(eSector sectores[])
 {
     sectores[0].id = 1;
     strcpy(sectores[0].descripcion, "RRHH");
@@ -189,3 +190,4 @@ void hardCode(eSector sectores[])
     strcpy(sectores[4].descripcion, "Deposito");
     sectores[4].isEmpty = 0;
 }
+*/

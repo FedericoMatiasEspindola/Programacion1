@@ -17,6 +17,7 @@ typedef struct
     float sueldo;
     int isEmpty;
     eFecha fechaIngreso;
+    int idSector;
 }eEmpleado;
 
 typedef struct
