@@ -2,73 +2,44 @@
 #include <stdlib.h>
 #include "Funcion.h"
 
-
 int main()
 {
-    int opcion;
-    int seguir=0;
+    char letra = 's';
+    eEmpleado gente[3];
+
+
+    inicializarEmpleados(gente , 3);
 
     do
     {
-        eEmpleado gente[50];
-
-        inicializarEmpleados(gente, 50);
-
         switch(menu())
         {
         case 1:
-            printf("1-Alta\n");
+            alta(gente ,3);
             system("pause");
-
             break;
         case 2:
-            printf("2-Baja\n");
+            bajaPorLegajo(gente , 3);
             system("pause");
             break;
         case 3:
-            printf("3-Modificacion\n");
             system("pause");
             break;
         case 4:
-            printf("4-Listar\n");
+            listar(gente ,3);
             system("pause");
             break;
         case 5:
-            printf("5-Ordenar\n");
             system("pause");
             break;
         case 6:
-           seguir=1;
-
+            letra = 'n';
             break;
         default:
-            printf("Opcion Incorrecta\n");
+            printf("\nERROR, ingrese una opcion valida.\n\n");
             system("pause");
-            break;
         }
-
-    system("cls");
-
-    }while(seguir!=1);
+    }
+    while(letra == 's');
+    return 0;
 }
-
-
-
-
-
-
-
-/*
-Limpiar pantalla
-Muestro un menu
-
-
-Menu:
-1-alta
-2-baja
-3-modificacion
-4-listar
-5-ordenar
-6-salir
-
-*/
