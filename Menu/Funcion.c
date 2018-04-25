@@ -150,6 +150,8 @@ void bajaPorLegajo(eEmpleado emp[] , int tam)
     eEmpleado nuevoEmpleado;
     int legajo;
     int legajoBaja = -1;
+    system("cls");
+    printf("*****Baja Empleado*****\n\n");
     printf("Legajo del empleado a dar de baja: ");
     scanf("%d" , &legajo);
 
